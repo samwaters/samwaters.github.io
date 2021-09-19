@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+        <link rel="stylesheet" href="todo.css" />
+    </head>
+    <body>
+        <div id="container">
+            <h1>To Do Application</h1>
+            <p>For some reason, it is always tradition to do a To Do Application</p>
+            <header>
+                Items To Do
+            </header>
+            <div id="newitem_container">
+                <input id="newitem_input" placeholder="What do you want to do?" type="text" />
+                <button disabled id="newitem_button">Add</button>
+            </div>
+            <table id="todo_list">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Item</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="todo_list_body"></tbody>
+            </table>
+        </div>
+        <script src="todo.js"></script>
+    </body>
+</html>

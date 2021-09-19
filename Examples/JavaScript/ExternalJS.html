@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>External JavaScript</title>
+    <style>
+        #container { display:flex; }
+        #target { background-color:red; height:100px; width:100px;}
+    </style>
+</head>
+<body>
+    <h1>External JavaScript</h1>
+    <p>Like CSS, adding lots of JavaScript to the page quickly becomes unreadable and unmanageable</p>
+    <p>Scripts can also be placed in other files and included in the HTML page</p>
+    <p>To do this, a HTML SCRIPT tag is put at the bottom of the page - &lt;script src="path/to/script.js" &gt;&lt;/script&gt;</p>
+    <p>When the browser encounters the SCRIPT tag, it will load the file and execute the script in it once the page has loaded</p>
+    <div id="container">
+        <div id="target">Mouse Over Here</div>
+        <div id="message">You've not mouse over'd yet</div>
+    </div>
+<script src="external.js"></script>
+</body>
+</html>

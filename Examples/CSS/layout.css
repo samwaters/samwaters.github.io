@@ -1,0 +1,7 @@
+#container { background-color:black; color:white; }
+#header { border-bottom:1px solid white; }
+#header > h3 { margin:0; }
+.flex { display: flex; }
+nav { width: 200px; }
+section { flex: 1; }
+ul { list-style: none; padding: 0; }

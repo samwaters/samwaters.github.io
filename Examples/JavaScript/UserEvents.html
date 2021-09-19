@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>User Events</title>
+        <style>
+            input { width: 50px; }
+        </style>
+    </head>
+    <body>
+        <h1>User Events</h1>
+        <p>JavaScript can be used to monitor and react to things that the user does while interacting with the web page</p>
+        <p>It can also be used to perform calculations</p>
+        <div>
+            <input type="text" id="n1" /> + <input type="text" id="n2" /> = <input type="text" id="a" disabled />
+        </div>
+        <button id="add">Add</button>
+        <script>
+            document.getElementById('n1').onkeydown = (e) => {
+                if(!/[0-9]/.test(e.key)) {
+                    e.preventDefault();
+                }
+            }
+            document.getElementById('n2').onkeydown = (e) => {
+                if(!/[0-9]/.test(e.key)) {
+                    e.preventDefault();
+                }
+            }
+            document.getElementById('add').onclick = () => {
+                document.getElementById('a').value = parseInt(document.getElementById('n1').value) + parseInt(document.getElementById('n2').value);
+            }
+        </script>
+    </body>
+</html>

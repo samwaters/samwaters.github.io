@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>JavaScript Introduction</title>
+    </head>
+    <body>
+        <h1>JavaScript Introduction</h1>
+        <p>JavaScript is code that runs after the web page has finished loading</p>
+        <p>It can see all of the HTML elements on the page, and can interact with all of them</p>
+        <p>It can also react to events from the user, such as mouse clicks and key presses</p>
+        <p>JavaScript is placed into &lt;script&gt; tags at the bottom of the page</p>
+        <div>
+            <button id="button">Click Me</button>
+            <span id="cat">You've not clicked the button yet</span>
+        </div>
+        <script>
+            document.getElementById('button').onclick = () => {
+                document.getElementById('cat').innerHTML = 'Well done, you clicked it'
+            }
+        </script>
+    </body>
+</html>

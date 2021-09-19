@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>CSS Introduction</title>
+        <style>
+            span { color: red; }
+            #cat { color:blue; }
+            .cat { color:green; }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Introduction</h1>
+        <p>CSS (Cascading Style Sheets) applies styles to HTML elements to change how they look and act</p>
+        <p>Styles can be applied to any HTML Element, and can change pretty much anything about it</p>
+        <p>CSS has two parts:</p>
+        <ul>
+            <li>The selector</li>
+            <li>The rules applied to any elements matching the selector</li>
+        </ul>
+        <h2>Selectors</h2>
+        <p>Selectors target HTML elements in the web page to apply styles to.</p>
+        <p>They can be done in 3 different ways:</p>
+        <ul>
+            <li>HTML Tag name, e.g. p or h1 - this will apply a style to every tag that matches</li>
+            <li>By element id - a unique ID can be assigned to HTML elements to apply a style to only that one</li>
+            <li>By class name - a class can also be assigned to HTML elements, to apply a style to any elements with that class</li>
+        </ul>
+        <h3>Tag Name</h3>
+        <p>This can be any HTML tag element, e.g. div, h1, p</p>
+        <h3>Element Id</h3>
+        <p>An ID can be added to a HTML element, like &lt;div id="cat"&gt; and selected using a hash and the id - #cat</p>
+        <h3>Class Name</h3>
+        <p>A class can be added to a HTML element, like &lt;div class="cat"&gt; and selected using a period and the class name - .cat</p>
+        <h2>Rules</h2>
+        <p>Rules are applied to elements matched by the selectors, and are placed inside curly brackets</p>
+        <p>A rule has two parts - the property being changed and what it is being changed to, e.g. color:blue</p>
+        <p>Multiple rules can be applied at once, separated with semicolons - { color:white; font-size:16px; }</p>
+        <h2>CSS Location</h2>
+        <p>CSS is placed in a &lt;style&gt; tag at the top of the HTML page:</p>
+        <pre>
+            &lt;style&gt;
+                span { color:red; }
+                #cat { color:blue; }
+                .cat { color:green; }
+            &lt;/style&gt;
+        </pre>
+        <h2>Examples</h2>
+        <h3>Selecting by HTML Tag</h3>
+        <p><span>This text is inside a span tag, and has this rule - span { color:red }</span></p>
+        <h3>Selecting by ID</h3>
+        <p><span id="cat">This text is inside a span tag with id cat, and has this rule - #cat { color:blue }</span></p>
+        <h3>Selecting by class</h3>
+        <p><span class="cat">This text is inside a span tag with class cat, and has this rule - .cat { color:green }</span></p>
+    </body>
+</html>
